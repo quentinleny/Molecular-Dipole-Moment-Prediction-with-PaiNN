@@ -1,4 +1,4 @@
-# Python
+# Python caches
 __pycache__/
 *.py[cod]
 *.pyo
@@ -9,62 +9,36 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Virtual environments
+.env
 .venv/
 venv/
 env/
 ENV/
 
-# OS / editor
+# OS / editor files
 .DS_Store
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Large / private data
+# Local data / generated outputs
 data/
-external/
+misc/
+outputs/
+
+# Model/data artifacts
 *.pt
 *.pth
 *.ckpt
 *.pkl
 *.pickle
 *.joblib
-*.npz
 *.npy
+*.npz
 
-# Outputs / experiment artifacts
-outputs/
-checkpoints/
-logs/
-submissions/
-diagnostics/
-eda/
-runs/
-wandb/
-mlruns/
-tensorboard/
-lightning_logs/
-
-# Generated files
-*.csv
-*.jsonl
-*.log
+# HPC / logs
+slurm-*.out
 *.out
 *.err
-
-# Keep source CSVs only if you intentionally want them tracked
-# !code/**/*.csv
-
-# Slurm / HPC artifacts
-slurm-*.out
-*.sbatch.out
-*.sbatch.err
-
-# Credentials / secrets
-.env
-.env.*
-*.key
-*.pem
-credentials*
-secrets*
+*.log
