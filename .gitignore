@@ -1,0 +1,44 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# OS / editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local data / generated outputs
+data/
+misc/
+outputs/
+
+# Model/data artifacts
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+
+# HPC / logs
+slurm-*.out
+*.out
+*.err
+*.log
