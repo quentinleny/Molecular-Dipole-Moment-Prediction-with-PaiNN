@@ -129,7 +129,7 @@ def build_model_from_cfg(cfg):
         )
 
     if "schnet" in model_name:
-        return models.SchNetDipoleRegressor(
+        return models.SchNetRegressor(
             atomic_number_col=cfg.get("atomic_number_col", config.atomic_number_col),
             hidden_channels=cfg.get(
                 "schnet_hidden_channels",
@@ -238,6 +238,8 @@ def main():
         config.checkpoint_dir / "painn_h128_l6_rbf64_cutoff10_seed60_split60_best.pt",
         config.checkpoint_dir / "painn_h128_l6_rbf64_cutoff10_seed60_split60_1_best.pt",
         config.checkpoint_dir / "painn_h128_l6_rbf64_cutoff10_seed60_split60_3_best.pt",
+        config.checkpoint_dir / "painn_h128_l6_rbf64_cutoff10_seed60_split60_12_best.pt",
+        config.checkpoint_dir / "painn_h128_l6_rbf64_cutoff10_seed60_split60_36_best.pt",
 
         # Best SchNet checkpoints
         config.checkpoint_dir / "schnet_mu_dipole_h192_f192_i6_seed60_split60_best.pt",

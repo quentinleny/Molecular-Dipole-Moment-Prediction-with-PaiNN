@@ -92,7 +92,7 @@ use_dipole_features = False
 dipole_feat_dim = 18
 
 # Training
-sweep_run = 5
+sweep_run = 6
 epochs = 350
 patience = 45
 lr = 1e-3
